@@ -4,7 +4,7 @@
 
 - Objetivo: En este reto, vamos a replicar el newsfeed de Twitter, para ello vamos a seguir un flujo de versiones que te guiarán para enfocarte de una manera más eficiente :)
 
-* [Mi solución](https://natcancein.github.io/Laboratoria/creandoSitioWebInteractivo/creandoInteraccionJavascript/reto-twitter/index.html)
+* [Mi solución](https://natcancein.github.io/Laboratoria/creandoSitioWebInteractivo/creandoInteraccionJavascript/reto-twitter)
 
 ## Versiones Solicitadas
 
