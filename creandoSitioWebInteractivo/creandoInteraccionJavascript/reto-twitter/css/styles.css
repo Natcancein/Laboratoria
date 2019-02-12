@@ -1,0 +1,76 @@
+body{
+font-family: 'Oxygen Mono', monospace;
+margin:0;
+box-sizing: border-box;
+font-size: 12px;
+}
+
+header{
+background-color: #4ab7da;
+color:white;
+text-align: center;
+position: fixed;
+top:0;
+width: 100%;
+}
+
+main{
+	background:url(https://picsum.photos/g/1920/1280);
+	width: 100%;
+	background-repeat: no-repeat;
+	 background-size: cover;
+	 height: 100vh;
+}
+
+.top{
+	width: 80%;
+	margin:auto;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-top: 20vh;
+}
+
+.top > div{
+	background-color: white;
+	width: 43%;
+	justify-content: space-between;
+	padding:15px;
+}
+
+
+.input{
+	display: flex;
+	flex-direction: column;
+}
+
+textarea{
+	height: auto;
+}
+.input .downTextArea{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+button{
+	margin-top: 20px;
+	border:none;
+	padding: 5px;
+}
+
+button:hover{
+	background-color: #4ab7da;
+	color:white;
+}
+
+.number{
+	color: #4ab7da;
+	font-size: 18px;
+	font-weight: bold;
+}
