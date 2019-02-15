@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>explicacion stop propagation</title>
+</head>
+<body>
+	
+	<div class="file-upload">
+	<input type="file" name="upload-file" class="file-upload__input" style="display: none;" />
+	
+	<div class="file-upload__drop-zone">
+		<span class="file-upload__drop-zone-text">Drop files here</span>
+		<a href="#" class="file-upload__btn--upload">Upload files</a>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+
+/*JAVASCRIPT VANILLA
+	function fileUpload() {
+  document.querySelector('.file-upload__input').click();
+}
+
+const dropzone = document.querySelector('.file-upload__drop-zone');
+const button = document.querySelector('.file-upload__btn--upload');
+
+dropzone.addEventListener('click', fileUpload);
+//button.addEventListener('click', fileUpload);
+
+----PREVENT DEFAULT
+
+/*button.addEventListener('click', (event) => {
+  event.preventDefault();
+ // fileUpload();
+});*/
+
+/* ----STOPPROPAGATION(): previene que el boton adquiera la funcion fileupload por estar dentro de la dropzone (bubble propagation)
+
+button.addEventListener('click', event => event.stopPropagation());*/
+
+//JQUERY : ----return false; sinifica que hara PREVENT DEFAULT Y STOP PROPAGATION
+
+function fileUpload() {
+  document.querySelector('.file-upload__input').click();
+}
+
+const dropzone = $('.file-upload__drop-zone');
+const button = $('.file-upload__btn--upload');
+
+$(dropzone).on('click', fileUpload);
+
+$(button).on('click', (event) => {
+ event.preventDefault();
+  fileUpload();
+ // return false;
+});
+
+</script>
+</body>
+</html>

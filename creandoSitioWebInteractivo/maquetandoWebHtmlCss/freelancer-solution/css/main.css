@@ -1,0 +1,295 @@
+/*CLASES REUTILIZABLES*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.container {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.container:before, .container:after {
+	content: " ";
+	display: table;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container:after {
+	clear: both;
+}
+
+.mb-0 {
+	margin-bottom: 0px;
+}
+
+.mt-0 {
+	margin-top: 0px;
+}
+
+.m-0 {
+	margin: 0px;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-white {
+	color: #FFF;
+}
+
+/*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+
+/*first section nav*/
+nav{
+	background-color: #2C3E50;
+	width: 100%;
+	height: 4em;
+	position: fixed;
+	z-index: 2;
+}
+h1{
+	margin: 0.5em 0 0.2em 0;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+ul > li > a{
+	text-decoration: none;
+	color: #FFF;
+	font-family: Montserrat;
+	font-weight: 600;
+	margin-right: 1em;
+}
+ul > li > a:hover{
+	color: #18BC9C;
+}
+
+ul > li {
+	display: inline-block;
+}
+
+ul{
+	float: right;
+	margin-top: 1.3em;
+}
+
+/* second section */
+
+#second{
+	background-color: #18BC9C;
+	width: 100%;
+	height: 800px;
+	text-align: center;
+}
+
+#second div img{
+	margin-top: 10em;
+}
+
+#second h1{
+	font-size: 70px;
+}
+
+.star{
+	width: 250px;
+	border-top: solid 5px #FFF;
+	
+	height: 0;
+
+	overflow: visible;
+	
+}
+.star::after{
+	font-family: FontAwesome;
+	font-size: 2em;
+	position: relative;
+	bottom: 0.6em;
+	padding: 0 0.2em;
+	content: "\f005";
+	color: #FFF;
+	background-color: #18BC9C;
+}
+
+.backwhite{
+	border-color: #2B3F4F;
+}
+
+.backwhite::after{
+	color: #2B3F4F;
+	background-color: #FFF;
+}
+.subtitle{
+	font-family: 'Lato', sans-serif;
+}
+
+/* third section */
+
+#third{
+	background-color: #FFF;
+	width: 100%;
+	height: 800px;
+	text-align: center;
+}
+
+.title {
+	margin-top: 2em;
+	font-family: Montserrat;
+	font-size: 40px;
+}
+#third div .line{
+	border-top: 6px solid #2C3E50;
+	width: 5em;
+}
+#third div .fa-star{
+	color: #2C3E50;
+	font-size: 30px;
+}
+.image{
+	width: 30%;
+	height: 220px;
+	background-size: cover;
+	float: left;
+	margin: 1em;
+}
+#one{
+	background-image: url(../assets/images/portfolio/cabin.png);
+}
+#two{
+	background-image: url(../assets/images/portfolio/cake.png);
+}
+#three{
+	background-image: url(../assets/images/portfolio/circus.png);
+}
+#four{
+	background-image: url(../assets/images/portfolio/game.png);
+}
+#five{
+	background-image: url(../assets/images/portfolio/safe.png);
+}
+#six{
+	background-image: url(../assets/images/portfolio/submarine.png);
+}
+
+
+/* fourth section */
+#fourth{
+	background-color: #18BC9C;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+}
+
+#fourth .container div .line{
+	border-top: 6px solid #FFF;
+	width: 4em;
+	margin: 0.5em auto;
+	display: inline-block;
+}
+
+p{
+	color: #FFF;
+	width: 30%;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 0 1em;
+	display: inline-block;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	padding-bottom: 2em;
+	vertical-align: top;
+}
+
+#first-p{
+	margin-left: 2em;
+}
+.btn-about{
+	background-color: #18BC9C;
+	font-size: 20px;
+	border: 2px solid #FFF;
+	border-radius: 6px;
+	padding: 10px 15px;
+	text-align: center;
+	margin: 0 40%;
+}
+
+.btn-about:hover{
+	background-color: #FFF;
+	color: #18BC9C;
+	cursor: pointer;
+	transition: background-color 0.5s ease-in-out;
+}
+
+/* Contact me*/
+
+#fifth{
+	background-color: #FFF;
+	width: 100%;
+	height: 850px;
+	text-align: center;
+}
+
+input{
+	width: 60%;
+	font-size: 20px;
+	border-bottom: #EEEEEE solid 1px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	margin-top: 2em;
+	padding-bottom: 2em;
+}
+input::placeholder{
+	color: #A4A8AA;
+}
+input:focus{
+	outline: none;
+}
+#message{
+	padding-bottom: 8em;
+}
+
+.send-div {
+	text-align: center;
+	margin-top: 3em;
+	width: 45%;
+}
+#send {
+	font-size: 20px;
+	padding: 0.7em;
+	border-radius: 5px;
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+	background-color: #18BC9C;
+	color: #FFF;
+}
+
+#send:hover {
+	background-color: #107C68;
+	transition: 0.3s;
+}
+#send:focus {
+	outline: none;
+}

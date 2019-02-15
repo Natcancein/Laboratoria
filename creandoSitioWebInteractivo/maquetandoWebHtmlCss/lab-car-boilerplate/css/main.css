@@ -1,0 +1,285 @@
+/* Los estilos de tu proyecto */
+*{
+	margin:0 auto;
+	overflow-x:hidden;
+}
+
+.general-container{
+margin-right:-80px;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+/* NAVEGADOR */
+.burger {
+float: left;
+}
+
+.navbar-white{
+background-color: white;
+ }
+
+.logo {
+	width: 80px;
+}
+
+.links{
+	color:gray;
+	font-size: 12px;
+}
+
+/* SECCIÓN 1 BAJO NAVEGADOR */
+
+.section1{
+	width: 100%;
+	background-position: bottom;
+	background-image: url(../assets/images/taxi.jpg);
+	min-height: 600px;
+	-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+/*rectángulo amarillo sobre imagen*/
+
+.yellow {
+	background-color: #F7A733;
+	height: auto;
+	margin-top: 150px;
+}
+
+.yellow-text {
+	font-size: 18px;
+}
+.white-logo {
+	width: 80px;
+	margin-left: 10px;
+}
+
+.button1 {
+	textransform: uppercase;
+}
+
+.line{
+	border-bottom: 1px solid white;
+	margin-top: 30px;
+}
+
+.line-text{
+	margin-top: 23px;
+	font-size: 9px;
+	text-align: center;
+}
+
+.button2{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* SECCIÓN 2 y 4 FONDO AMARILLO */
+
+.section2, .section4{
+	background-color: #F7A733;
+	min-height: 400px;
+}
+
+.line-white{
+	border:1px solid white;
+	height: 300px;
+	margin-top: 50px;
+}
+
+.line-white img{
+	width: 180px;
+	vertical-align: middle;
+	margin-top: 10px;
+
+}
+
+.line-white p {
+	font-weight: lighter;
+	font-size: 
+}
+
+/*texto escondido*/
+
+.h3-hidden{
+/*	margin-top: 100px;*/
+}
+.white-logo2 {
+	width: 140px;
+	margin-left: 120px;
+	width:60px;
+	margin-top: -30px;
+}
+
+.button4 {
+	margin-top: 30px;
+	text-transform: none;
+	width: 150px;
+	margin-bottom: 30px;
+}
+
+/*texto que aparece*/
+
+.text-mobil {
+
+	text-align: center;
+
+}
+
+/* SECCIÓN 3 FONDO IMAGEN */
+
+.section3{
+	width: 100%;
+	background-position: center;
+	background-image: url(../assets/images/conduce.jpg) ;
+	height: 400px;
+	-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+/* rectángulo negro */
+.black-filter {
+	background-color: rgba(0,0,0, 0.5);
+	height: 400px;
+}
+
+.black-filter h3 {
+	color:white;
+	margin-top: 30px;
+}
+
+/* texto sobre fondo negro */
+.text-black {
+  color: white;
+	margin-top: 90px;
+}
+
+/* boton sobre fondo negro */
+.text-black button {
+	background-color: #F7A733;
+	color: white;
+}
+
+
+/*SECCIÓN 4, FONDO AMARILLO */
+.rates {
+	padding-top: 30px;
+	min-height: 400px;
+	overflow-y:hidden;
+}
+.travel {
+	display: inline-block;
+	background-color: #F7A733;
+	border:1px solid white;
+	color:white;
+	border-radius: 15px;
+}
+
+.travel::-webkit-input-placeholder {  
+	color: white; 
+} 
+
+.travel::-moz-placeholder {   
+	color: white; 
+}
+
+.travel:-ms-input-placeholder {    
+	color: white;
+}
+
+.travel:-moz-placeholder {    
+	color: white; 
+}
+.shape1 {
+ padding-top: 30px;
+}
+
+.shape2 {
+	padding-top: 20px;
+}
+
+.button3 {
+	margin-top: 30px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+iframe {
+	padding:15px;
+	border:1px solid white;
+	width: 100%;
+}
+
+/*SECCIÓN 5, FONDO NEGRO FOOTER */
+
+.section5 {
+	background-color: #202020;
+	height: 400px;
+}
+
+.down-logo {
+	border-bottom:1px solid white;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 40px;
+}
+
+.down-white-logo {
+ width: 80px;
+ padding-bottom: 8px;
+}	
+
+.row-footer {
+	margin-top: 20px;
+}
+
+.logos {
+ margin-left:-10px;
+}
+
+.appstore, .googlePlay{
+	width:120px;
+	margin-top: 10px;
+
+}
+
+.icons-hidden {
+	color:white;
+	margin-left: 5%;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.icons-hidden i {
+	margin-right: 7px;
+	font-size: 12px;
+}
+
+.icons {
+	color:white;
+	margin-left: 5%;
+	padding-bottom: 10px;
+	width: 90%;
+
+}
+
+.icons i {
+	margin-right: 7px;
+	font-size: 12px;
+}
+
+.final {
+	margin-left: 5%;
+	padding-top: 10px;
+	border-top: 1px solid white;
+	width: 90%;
+
+}

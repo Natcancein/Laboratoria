@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menú Hamburguesa</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<style type="text/css">
+	body{
+		font-family: sans-serif;
+	}
+	nav div{
+		display: flex;
+		 flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		margin-left: 30px;
+		color: #4cd06c;
+		transition: background-color 350ms ease-in-out;
+	}
+
+	nav i, nav h3{
+		padding: 8px;
+	}
+	h3{
+		
+	}
+
+	i{
+		border-radius: 50%;
+		background-color: #4cd06c;
+		color: white;
+	}
+
+	.menu{
+		background-color: #4cd06c;
+		width: 250px;
+		color: white;
+		
+	}
+
+	.menu ul {
+		flex-basis: 100%;
+		list-style: none;
+		color: white;
+	}
+
+	.menu ul li{
+		line-height: 2.5;
+	}
+
+
+</style>
+</head>
+<body>
+	<nav>
+		<div id="menu">
+		<i class="fas fa-bars"></i>
+		<h3>Burguer</h3>
+		</div>
+	
+	</nav>
+
+<script type="text/javascript">
+	var icon = document.querySelector("i");
+	var menu = document.querySelector("#menu");
+	
+	icon.addEventListener("click", showMenu,false);
+
+	menu.addEventListener("mouseout", hideMenu,true);
+
+	function showMenu(){
+		
+		menu.classList.add("menu");
+
+		infoMenu();
+	}
+
+	function infoMenu(){
+
+		var ul= document.createElement("ul");
+		//var li= menu.createElement("li");
+        menu.appendChild(ul);
+		var arrayLi=4;
+
+		for(var i = 0; i < arrayLi; i++){
+			var li=document.createElement("li");
+			ul.appendChild(li);
+		}
+
+		li1 = ul.getElementsByTagName('li')[0];
+		li2 = ul.getElementsByTagName('li')[1];
+		li3 = ul.getElementsByTagName('li')[2];
+		li4 = ul.getElementsByTagName('li')[3];
+
+		var texto1 = document.createTextNode('Home');
+		var texto2 = document.createTextNode('About');
+		var texto3 = document.createTextNode('Portfolio');
+		var texto4 = document.createTextNode('Contact');
+
+		li1.appendChild(texto1);
+		li2.appendChild(texto2);
+		li3.appendChild(texto3);
+		li4.appendChild(texto4);
+		
+	}
+
+	function hideMenu(){
+			ulH=document.getElementsByTagName("ul");
+			menu.classList.remove("menu");
+
+	}
+	//setInterval(showMenu, 3000);
+</script>
+</body>
+</html>

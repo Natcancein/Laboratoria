@@ -1,0 +1,249 @@
+// variable in scss
+$bg-color:#107BB0;
+
+@mixin flex(){ 
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+
+@mixin bg-icon(){
+	height: 10px;
+	padding: 10px;
+	background-color: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+}
+
+@mixin margin-right($value){
+
+	margin-right: $value;
+}
+
+body{
+margin: 0;
+background-color: #107BB0;
+font-family: Helvetica Neue,Arial,Helvetica,sans-serif;
+font-size: 12px;
+color:white;
+font-weight: bolder;
+box-sizing: border-box;
+
+	/*HEADER*/
+	header{
+	width: 100%;
+	position: fixed;
+	background-color: #026aa7;
+	font-color:white;
+	top: 0;
+	height: 60px;
+ 		
+ 		nav {
+	
+ 			 ul  {
+			font-size: 14px;		
+			list-style: none;
+
+	       @include flex();
+
+				.left{
+			   margin-left: -30px;
+		       @include flex();
+				
+				
+
+				/*div tablero*/
+				li {
+				@include bg-icon();
+				@include flex();
+
+				@include margin-right(5px);
+
+					span {
+					margin-left: 5px;
+					}
+				
+				}
+
+				/*buscador*/
+				.type2 {
+				width: 120px;
+				margin-bottom: 1px;
+
+				}
+
+			}
+
+				 .center{
+
+				/*logo trello*/
+				li img.type3 {
+				width: 90px;
+				opacity: 0.5;
+				
+				}	
+
+ 			}
+    		
+
+			}
+				 .right{
+				width: 150px;
+			    @include flex();
+				margin-right:5px;
+				/* clases de listas con fondo transparente*/
+				.type4, .type5, .type6{
+				    @include bg-icon();
+				}
+				
+			}
+		}
+	}
+
+	
+	main {
+		margin-top: 50px;
+		padding: 20px;
+
+		/*PARTE CENTRAL*/
+		#tablero{
+		width: 350px;
+		@include flex();
+	
+			/*iconos junto a titular*/
+			.iconosTablero {
+    		@include flex();
+			width: 80px;
+
+				.fa-star-o, .fa-lock {
+				padding-left: 5%;
+				}
+	
+				.privado{
+    			font-size: 13px;
+    			font-weight: normal;    			
+ 
+				}
+
+			}
+
+		}
+
+
+		/*CREANDO TABLEROS*/
+		#anadirLista {
+ 		//@include flex();
+ 		 display: inline-block;
+  		transition-timing-function: ease;
+ 		transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+		
+		#lista:hover{
+			background-color: #026aa7;
+			}
+
+			#lista{
+			display: block;
+			width: 180px;
+			background-color: #0A5178;
+			padding: 5px;
+			border-radius: 3px;
+				
+				p{
+					padding: 6px 8px;
+    				color: hsla(0,0%,100%,.8);
+    				transition: color 85ms ease-in;
+    				font-size: 14px;
+    				font-weight: bold;
+				}
+
+		
+			}
+
+			#form{
+			display: none;
+		
+			background-color: #DFE0E4;
+			margin-top: 5px;
+			border-radius: 5px;
+			padding: 10px;
+			float: right;
+
+				#etiqueta {
+ 				color:black;
+ 				visibility: hidden;
+ 
+				}
+
+				input{
+	
+				background: #fff;
+  				border: none;
+    			box-shadow: inset 0 0 0 2px #0079bf;
+   				display: block;
+   				margin: 0;
+   				transition: margin 85ms ease-in,background 85ms ease-in;
+				height: 20px;
+				padding: 2px;
+				color: #17394d;
+    			font-size: 14px;
+    			line-height: 20px;
+    			font-weight: bold;
+				}
+
+				.cmd {
+				background-color: #52B653;
+				color: white;
+				border: none;
+				margin-top: 5%;
+				padding: 3%;
+				width: 30%;
+				font-weight: bolder;
+				border-radius: 5px;
+				}
+
+			}
+			
+			.nuevaLista{
+				float: left;
+				/*contenedor nueva lista*/
+				background-color: #DFE0E4;
+				width: 200px;
+				color:black;
+				border-radius: 5px;
+				margin: 5px;
+				float: left;
+				padding: 5px; 
+			
+				.tituloLista{
+					display: block;
+					font-size: 14px;
+
+				}
+
+				a{
+					display: block;	
+					color: #333;
+					margin-top: 20px;
+					font-size: 11px;	
+				}
+
+
+				}
+
+				
+		}
+
+	
+
+	}
+
+
+
+
+}
+
+
+
+
